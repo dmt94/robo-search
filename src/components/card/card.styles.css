@@ -1,0 +1,49 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  background: rgba(238, 234, 234, 0.621);
+  border-radius: 16px;
+  
+  backdrop-filter: blur(6.8px);
+  -webkit-backdrop-filter: blur(6.8px);
+  padding: 55px;
+  cursor: pointer;
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.card-container:hover {
+  transform: scale(1.05);
+  z-index: 3;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  transition: ease-in-out 500ms;
+}
+
+.email-border {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(13, 13, 13, 0.1);
+  padding: 10px;
+  background-color: rgba(137, 96, 87, 0.486);
+}
+
+.email {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1rem;
+  color: rgb(254, 243, 234);
+}
+
+.monster-img:hover {
+  animation: heartBeat;
+  animation-duration: 2s;
+}
